@@ -1,8 +1,7 @@
 import * as React from "react";
 
-let num:number;
-
-num = 4;
+import { SectionComponent } from './SectionComponent';
+import { NameComponent } from './sections/NameComponent';
 
 interface ComponentProps {
 
@@ -11,7 +10,9 @@ interface ComponentProps {
 export class MainComponent extends React.Component<ComponentProps, {}> {
     render() {
         return (
-            <div>Ciao</div>
+            <SectionComponent>
+                <NameComponent/>
+            </SectionComponent>
         );
     }
 }
