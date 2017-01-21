@@ -1,0 +1,10 @@
+.SectionComponent {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  background-color: blue;
+
+  @import './sections/index';
+}

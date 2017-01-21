@@ -48,12 +48,13 @@ body {
   -o-user-select: none;
   user-select: none; }
   body .SectionComponent {
-    height: 100%;
     width: 100%;
+    height: 100vh;
+    position: relative;
     background-color: blue; }
     body .SectionComponent .NameComponent {
       width: 100%;
-      height: 100vh;
+      height: 100%;
       position: relative; }
       body .SectionComponent .NameComponent .background-image {
         width: 100%;
@@ -79,3 +80,55 @@ body {
         bottom: 0;
         left: 0;
         right: 0; }
+    body .SectionComponent .BiographyComponent {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: #F7FDFF;
+      font-family: "Open Sans";
+      font-size: 12px; }
+      body .SectionComponent .BiographyComponent .portrait {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        margin-left: -200px;
+        margin-top: -100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; }
+      body .SectionComponent .BiographyComponent .description {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        margin-left: 100px;
+        margin-top: -65px;
+        height: 130px;
+        width: calc(50% - 200px);
+        line-height: 20px; }
+        body .SectionComponent .BiographyComponent .description .name {
+          top: 10px;
+          position: relative;
+          font-weight: 400;
+          color: #2E363C; }
+        body .SectionComponent .BiographyComponent .description .biography {
+          top: 26px;
+          position: relative;
+          color: #687682; }
+      body .SectionComponent .BiographyComponent .information {
+        width: 300px;
+        height: 140px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -70px; }
+        body .SectionComponent .BiographyComponent .information .info {
+          height: 54px; }
+          body .SectionComponent .BiographyComponent .information .info img {
+            display: inline;
+            width: 40px;
+            vertical-align: middle;
+            margin: 20px; }
+          body .SectionComponent .BiographyComponent .information .info span {
+            display: inline-block;
+            vertical-align: middle; }

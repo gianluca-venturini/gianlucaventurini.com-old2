@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { SectionComponent } from './SectionComponent';
 import { NameComponent } from './sections/NameComponent';
+import { BiographyComponent } from './sections/BiographyComponent';
 
 interface ComponentProps {
 
@@ -10,9 +11,14 @@ interface ComponentProps {
 export class MainComponent extends React.Component<ComponentProps, {}> {
     render() {
         return (
-            <SectionComponent>
-                <NameComponent/>
-            </SectionComponent>
+            <div className="MainComponent">
+                <SectionComponent>
+                    <NameComponent/>
+                </SectionComponent>
+                <SectionComponent>
+                    <BiographyComponent/>
+                </SectionComponent>
+            </div>
         );
     }
 }
